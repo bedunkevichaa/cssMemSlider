@@ -48,6 +48,25 @@ body {
     z-index: 10;
 }
 
+.circle {
+
+	opacity: 0.5;
+	z-index: -3;
+	height: 1.7em;
+    width: 1.7em;
+	
+	border-radius: 100%;
+	position: absolute;
+	transform: translate(-28%, -28%);
+	
+}
+
+
+.slider_picture circle:hover label {
+    background-color: white;
+	border-color: white;
+	
+}
 
 
 .slider_picture label:hover {
@@ -116,7 +135,7 @@ body {
 	.slider_picture li:nth-child(1) label {
 		left: 50%;
 		transform: translateX(-2.4em);
-		bottom: -2.65em;
+		bottom: -2.6em;
 	}
 	.slider_picture li:nth-child(2) label {
 		bottom: -3em;
@@ -148,4 +167,11 @@ body {
 	
 	}
 }
-	
+
+@media (max-width: 500px) {
+	.slider_picture li:nth-child(2) label {
+		bottom: -2.8em;
+		left: 50%;
+		transform: translateX(-0.4em);
+	}
+}
